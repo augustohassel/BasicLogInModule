@@ -28,6 +28,11 @@ log-in que pudiese manejar no solo el ingreso del usuario, sino también
 los distintos tipos de permisos intenros y vistas disponibles una vez
 dentro de la aplicación.
 
+Este es el resultado!
+<center>
+![](images/login.gif)
+</center>
+
 ------------------------------------------------------------------------
 
 ### Supuestos y definiciones
