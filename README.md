@@ -30,7 +30,7 @@ dentro de la aplicación.
 
 Este es el resultado!
 <center>
-![](./images/login.gif)
+<img src='images/login.gif'/>
 </center>
 
 ------------------------------------------------------------------------
