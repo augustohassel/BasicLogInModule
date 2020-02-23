@@ -29,9 +29,9 @@ los distintos tipos de permisos intenros y vistas disponibles una vez
 dentro de la aplicación.
 
 Este es el resultado!
-<center>
+<p align="center" width="700px" height="auto">
 <img src='images/login.gif'/>
-</center>
+</p>
 
 ------------------------------------------------------------------------
 
@@ -59,7 +59,8 @@ módulo para todos mis tableros).
 
 Con la **primer opción** guardo todos los módulos en una carpeta llamada
 “modules” y luego hago un source desde *global.R*:
-`invisible(lapply(list.files(path = "modules", full.names = T), source))`.  
+`invisible(lapply(list.files(path = "modules", full.names = T), source))`.
+
 Con la **segunda opción** guardo los módulos en un repositorio en GitHub
 y luego hago un source del contenido directamente desde ahí! Con esto me
 aseguro de que solo tengo que modificar en un solo lugar y esto afecta a
@@ -128,10 +129,6 @@ Los usuarios creados para la versión demo están cargados en el
 <tr class="odd">
 <td style="text-align: left;">pedro</td>
 <td style="text-align: right;">pedro</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: right;"></td>
 </tr>
 </tbody>
 </table>
@@ -260,5 +257,4 @@ Espero que haya servido este primero posteo! Todo feedback es
 bienvenido!
 
 > **Bonus Track**: Sigo a varios repositorios interesante sobre Shiny en
-> Github:
-> (<a href="https://github.com/augustohassel?tab=stars" class="uri">https://github.com/augustohassel?tab=stars</a>)
+> Github: miralos [aquí](https://github.com/augustohassel?tab=stars)

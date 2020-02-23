@@ -21,7 +21,7 @@ Se que existen servicios como [Auth0](https://auth0.com/) o, si tienen suerte, l
 Por curiosidad, y en ciertos momentos por necesidad, fui creando un log-in que pudiese manejar no solo el ingreso del usuario, sino también los distintos tipos de permisos intenros y vistas disponibles una vez dentro de la aplicación. 
 
 Este es el resultado!
-<center> <img src='images/login.gif'/></center>
+<p align="center" width="700px" height="auto"> <img src='images/login.gif'/></p>
 
 ***
 ### Supuestos y definiciones
@@ -33,7 +33,8 @@ Este es el resultado!
 
 Actualmente **cargo módulos de dos maneras distintas** dependiendo de si el módulo es específico del tablero en que me encuntro trabajando o si es transversal a todos los tableros (en el caso del login, es el mismo módulo para todos mis tableros). 
 
-Con la **primer opción** guardo todos los módulos en una carpeta llamada "modules" y luego hago un source desde *global.R*: `invisible(lapply(list.files(path = "modules", full.names = T), source))`.  
+Con la **primer opción** guardo todos los módulos en una carpeta llamada "modules" y luego hago un source desde *global.R*: `invisible(lapply(list.files(path = "modules", full.names = T), source))`. 
+
 Con la **segunda opción** guardo los módulos en un repositorio en GitHub y luego hago un source del contenido directamente desde ahí! Con esto me aseguro de que solo tengo que modificar en un solo lugar y esto afecta a todos los tableros! Algo así sería:
 
 ```{r source github, eval=FALSE}
@@ -69,12 +70,13 @@ El modal que muestra el login contiene la información típica, **pide un usuari
 
 Los usuarios creados para la versión demo están cargados en el *server.R* y son: 
 
+<div align="center">
 |Usuario   <|> Contraseña|
 |:----------|-----------:|
 |demo       |demo        |
 |juan       |juan        |
 |pedro      |pedro       | 
-|           |            |
+</div>
 <br>
 
 > **Aclaración**: solo por ser un caso de ejemplo estoy guardando los usuarios en un data frame en el server. En producción lo tengo todo en bases de datos en la nube en GCloud.
@@ -177,4 +179,4 @@ Así es como llegamos al final y logramos tener un log-in básico modularizado! 
 
 Espero que haya servido este primero posteo! Todo feedback es bienvenido!
 
-> **Bonus Track**: Sigo a varios repositorios interesante sobre Shiny en Github: (https://github.com/augustohassel?tab=stars)
+> **Bonus Track**: Sigo a varios repositorios interesante sobre Shiny en Github: miralos [aquí](https://github.com/augustohassel?tab=stars)
